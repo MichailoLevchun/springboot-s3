@@ -32,7 +32,7 @@ public class HelloEdpController {
         this.s3Client = s3Client;
     }
 
-    @GetMapping("/")
+    @GetMapping("/hello")
     public Map<String, String> getDataFromS3() {
         try {
             GetObjectRequest getObjectRequest = GetObjectRequest.builder()
