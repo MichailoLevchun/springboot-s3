@@ -28,7 +28,6 @@ public class HelloEdpController {
     @Value("${s3.bucket.name}")
     private String bucketName;
 
-    // 🔥 Інжектуємо готовий S3Client через конструктор
     public HelloEdpController(S3Client s3Client) {
         this.s3Client = s3Client;
     }
